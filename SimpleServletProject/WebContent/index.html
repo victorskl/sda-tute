@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SimpleServletProject</title>
+</head>
+<body>
+
+	<h2>Activity 2: Develop a simple Servlet based web application</h2>
+
+	<ul>
+		<li><a href="SimpleServlet">/SimpleServlet</a></li>
+		<li><a href="xmlServletpath">/xmlServletpath</a></li>
+	</ul>
+
+	<h3>Discussion:</h3>
+
+	<p>
+		What is the goal of using a deployment descriptor file by Java web
+		applications? <br /> ANSWER: it is a description about the web
+		application context. so that we can configure web application context
+		properties such as the servlet mapping and so on. it can possibly
+		externalize the configuration.
+	</p>
+
+	<p>
+		What is the role of the two entries: servlet and servlet-mapping
+		elements in web.xml file? <br /> ANSWER: servlet - declare where and
+		which Java servlet class file is. servlet-mapping - declare the web
+		context URL mapping for the given servlet.
+	</p>
+
+	<hr />
+
+	<h2>Activity 3: Passing parameters to a Servlet</h2>
+
+	<ul>
+		<li><a
+			href="xmlServletParameterspath?userName=Victor&passWord=BANG!">/xmlServletParameterspath?userName=Victor&passWord=BANG!</a></li>
+		<li><a href="SimpleLogInForm.html">/SimpleLogInForm.html</a></li>
+	</ul>
+
+	<h3>Discussion:</h3>
+
+	<p>
+		What is the difference between doGet() and doPost()? <br /> ANSWER:
+		doPost() require HTML form to be posted on the parameters to servlet.
+		doGet() can process parameters directly from URL pattern and it expose
+		the query. In contrast, doPost() can hide through using HTML form.
+		E.g. the password field.
+	</p>
+	
+	<hr />
+
+	<h2>Activity 4: Initializing Servlets</h2>
+
+	<h3>Discussion:</h3>
+
+	<p>
+		Research on the init() and service() methods and understand their
+		behaviour in the context of Servlets. <br /> ANSWER:
+	</p>
+	<ul>
+		<li>init() override always get call at the first time servlet
+			initialized. it is always before doPost(), doGet(), service() and any
+			other potential servlet methods.</li>
+		<li>service() override depends of where we place our custom code
+			before or after super.service() this will effect the before or after
+			of doPost(), doGet() and potentially other HTTP verbs.</li>
+	</ul>
+	
+	<hr />
+
+	<h2>Activity 5: Java Server Pages - JSPs</h2>
+
+	<h3>Discussion:</h3>
+
+	<p>What are the advantages of using JSP? 
+	<br /> ANSWER: advantages are - so that we do not need to write HTML code inside 
+	Java class file servlet response PrintWriter. it can potentially split the view
+	logic from the business and domain logic.
+	</p>
+
+
+</body>
+</html>
