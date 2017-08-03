@@ -7,6 +7,9 @@
 
 ### Eclipse JDK and Server Library
 - Next to fix any unbound JDK and Server Library: Right Click on the project (e.g `SimpleServletProject`) > Build Path > Configure Build Path... > Libraries tab > remove any unbound library. 
+
+![buildpath_unbound.png](https://www.dropbox.com/s/q4ut54oirskphdc/buildpath_unbound.png?raw=1)
+
 - Then Add Library > JRE System Library > Alternate JRE > Installed JREs to set an approprieate JDK as default and add to project.
 - Configure Apache Tomcat with Eclipse as follows: File > New > Other... > Server > Server > Next > Apache > Tomcat 8.5 > at Tomcat installation directory > Browse and point to where you downloaded and extracted the `apache-tomcat-8.5.16-windows-x64.zip`
 
