@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
-<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,Servers"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleServletProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleWebProject"/>
 </provider>
-<workingSets editPageId="org.eclipse.ui.resourceWorkingSetPage" id="1501432700334_7" label="others" name="others">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
-</workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501420739527_0" label="workshop1" name="workshop1">
 <item elementID="=SimpleServletProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=SimpleWebProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
