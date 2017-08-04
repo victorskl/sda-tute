@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Workshop 2 - LoginAppMVCProject</title>
+</head>
+<body>
+
+	<h2>Activity 1: develop a simple web application using the Model
+		View Controller (MVC)</h2>
+
+	<ul>
+		<li><a href="login.jsp">login.jsp</a></li>
+	</ul>
+
+	<h3>Discussion:</h3>
+
+	<p>
+		What are differences between your login application in workshop1 and
+		LoginAppMVCProject that you have implemented in this workshop? what
+		are the benefits of using MVC pattern based on your observations? <br />
+		ANSWER: The business logic is implemented in LoginService.
+		LoginController servlet becomes only handling HTTP request and
+		response routing - delegate to appropriate services. Views - login,
+		success - are implemented in JSP/HTML that is no more clutter with
+		Java code inside servlet. Benefits - separation of concern, a better
+		code maintainability.
+	</p>
+
+	<hr />
+
+	<h2>Activity 2: Passing back parameters to the view</h2>
+
+	<ul>
+		<li><a href="login2.jsp">login2.jsp</a></li>
+	</ul>
+
+	<h3>Discussion:</h3>
+
+	<p>
+		What are the differences between dispatcher.forward() and
+		response.sendRedirect()? <br /> ANSWER: The forward method does not
+		physically land to success2.jsp. The LoginController2 servlet instead
+		just forward the HTTP request and response over to JSP page. The user
+		instance is added into the request attribute. For the redirect method,
+		it routes the user to the login JSP page and, the JSP page retrieve
+		the user instance from session attribute.
+	</p>
+
+	<hr />
+
+	<h2>Activity 4: Managing dynamic content in web applications</h2>
+
+	<ul>
+		<li><a href="products.jsp">products.jsp</a></li>
+	</ul>
+
+	<hr />
+
+	<h3>Note: Session Vs ServletContext</h3>
+	<p>
+		The attributes stored in the ServletContext are available to all
+		servlets in your application, and between requests and sessions. That
+		means, that the attributes are available to all visitors of the web
+		application. Session attributes are just available to a single user.
+
+		The ServletContext attributes are still stored in the memory of the
+		servlet container. That means that the same problems exists as does
+		with the session attributes, in server clusters. [<a target="_blank"
+			href="http://tutorials.jenkov.com/java-servlets/servletcontext.html">REF</a>]
+	</p>
+
+
+	<h3>Note: How to (really) MVC with (just) JSP and Servlet</h3>
+
+	<i>This is not part of workshop2 activity. This is my own
+		observation. This may be still an advanced topic for you!</i>
+
+	<p>
+		You might wonder how the 'hell' the <a href="product.html?type=TV">product.html?type=TV</a>
+		work; where there is no product.html file and how this get generated!
+		This is the use case of RequestDispatcher forward to encapsulate the
+		JSP as a View only. This is the technique for MVC programming with
+		just JSP and Servlet - in a sense of JSP is used for rendering the
+		View only which is backed by the Controller. This is the basic concept
+		of the pattern that is used similar in Spring MVC.
+	</p>
+
+</body>
+</html>
