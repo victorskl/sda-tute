@@ -1,0 +1,31 @@
+## Workshop 2
+
+- Servlet vs JSP - which one is better?
+
+- split the contents: Dynamic and Static
+    - developer who do 
+        - frontend - UI
+        - backend - business logic
+    - MVC
+        - Model: data structure
+            - is every Java object model?
+            - ??
+        - View: ui code
+            - map or hashtable - key to retrieve model data
+        - Controller
+            - controlling actions, operations, traffic - which page to view
+    - design pattern - solution to common problem
+    - what does MVC solve?
+        - separation of concern - is design principal
+            - principal vs pattern?
+            - principal is to provide a best possible design to a problem
+            - pattern is how do you achieve to the principal
+  - what do you use Frameworks like Spring, Struct?
+    - maintenance
+    - plumbing code, boilerplate code
+        - code repeat over and over again
+        - e.g. controller routing in servlet
+    - troubleshooting is harder
+- storing Session on: client Vs server
+    - store on client: scalability
+    - store on server: portability - if client browser send back the same cookie - it can reuse
