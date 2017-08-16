@@ -1,4 +1,16 @@
 # SDA-Tute
+
+Software Design and Architecture Tutorials
+
+### Quick demo
+
+- http://cloud.sankholin.com/SimpleWebProject/
+- http://cloud.sankholin.com/SimpleServletProject/
+- http://cloud.sankholin.com/LoginAppMVCProject/
+
+
+### How to 
+
 - Clone this repo `git clone https://github.com/victorskl/sda-tute.git`
 - Download and install [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/eclipse-packages/)
 - Launch the Eclipse and, when an open dialog for workspace, point to this `sda-tute` folder.
@@ -6,6 +18,7 @@
 - Import team project set: File > Import > Team > Team Project Set > [Browse to `sda-tute` folder] > `sda-tute.psf`
 
 ### Eclipse JDK and Server Library
+
 - Next to fix any unbound JDK and Server Library: Right Click on the project (e.g `SimpleServletProject`) > Build Path > Configure Build Path... > Libraries tab > remove any unbound library. 
 
 ![buildpath_unbound.png](https://www.dropbox.com/s/q4ut54oirskphdc/buildpath_unbound.png?raw=1)
