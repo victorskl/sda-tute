@@ -40,3 +40,14 @@ Software Design and Architecture Tutorials
 ![workingset3.png](https://www.dropbox.com/s/412yvcgk371bjf2/workingset3.png?raw=1)
 
 ![workingset4.png](https://www.dropbox.com/s/krat111xzltg76l/workingset4.png?raw=1)
+
+
+### Code Style (Optional)
+
+- Setup code style. This is optional.
+
+- Preferences > Java > Code Style > Formatter > Import > browse to sda-tue folder > code-style-profile.xml
+![code-style-import.png](https://www.dropbox.com/s/vdkd2wnz12stc85/code-style-import.png?raw=1)
+
+- Preferences > General > Text Editors > insert spaces for tabs
+![insert-spaces-for-tab.png](https://www.dropbox.com/s/giacmu7uvkyt2iz/insert-spaces-for-tab.png?raw=1)
