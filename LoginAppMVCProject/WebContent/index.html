@@ -6,6 +6,13 @@
 </head>
 <body>
 
+	<fieldset>
+		<legend>NOTE</legend>
+		<p>Response to discussion questions are my own attempts and observation. 
+		I can not endorse 100% correctness of these responses in the context of how the subject is framing. <br />
+		Please approach the respective lecturer or tutor or use your own discretion.</p>
+	</fieldset>
+
 	<h2>Activity 1: develop a simple web application using the Model
 		View Controller (MVC)</h2>
 
@@ -78,13 +85,19 @@
 
 	<p>
 		You might wonder how the 'hell' the <a href="product.html?type=TV">product.html?type=TV</a>
-		work; where there is no product.html file and how this get generated!
-		This is the use case of RequestDispatcher forward to encapsulate the
-		JSP as a View only. This is the technique for MVC programming with
+		work; where there is no 'product.html' file and how this get generated!
+		This is the use case of 'RequestDispatcher' forward to encapsulate the
+		<b>JSP as a View only</b>. This is the technique for MVC programming with
 		just JSP and Servlet - in a sense of JSP is used for rendering the
-		View only which is backed by the Controller. This is the basic concept
-		of the pattern that is used similar in Spring MVC.
-	</p>
-
+		View only (i.e. hide inside WEB-INF/views, and no Java code inside JSP except JSTL, taglib or some template language idioms). 
+		These views are backed by the respective Controller. This is the basic concept of the pattern that is used similar in Spring MVC.
+		Interested?? Read more about it:
+		<ul>
+		  <li><a target="_blank" href="https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring">What is Dispatcher Servlet in Spring?</a></li>
+		  <li><a target="_blank" href="http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/mvc.html#mvc-servlet">DispatcherServlet and FrontController pattern</a></li>
+		  <li><a target="_blank" href="http://www.oracle.com/technetwork/java/frontcontroller-135648.html">Core J2EE Patterns - Front Controller</a></li>
+		</ul>
+    </p>
+    
 </body>
 </html>
