@@ -2,19 +2,30 @@
 
 Software Design and Architecture Tutorials
 
+*Note that you might need to repeat these procedures as I add new projects into this repo in each week.*
+
 ### Quick demo
 
 - http://cloud.sankholin.com/SimpleWebProject/
 - http://cloud.sankholin.com/SimpleServletProject/
 - http://cloud.sankholin.com/LoginAppMVCProject/
-
+- http://cloud.sankholin.com/SpringMVCDemo/
 
 ### How to 
 
-- Clone this repo `git clone https://github.com/victorskl/sda-tute.git`
+- Clone this repo `git clone https://github.com/victorskl/sda-tute.git`. Or update it if you have already clone before. Fetch and pull to the latest by:
+    ```
+    cd sda-tute
+    git fetch
+    git pull
+    ```
+
 - Download and install [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/eclipse-packages/)
+
 - Launch the Eclipse and, when an open dialog for workspace, point to this `sda-tute` folder.
+
 - Import workspace preference: File > Import > General > Preferences > [Browse to `sda-tute` folder] > `sda-tute.epf`
+
 - Import team project set: File > Import > Team > Team Project Set > [Browse to `sda-tute` folder] > `sda-tute.psf`
 
 ### Eclipse JDK and Server Library

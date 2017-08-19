@@ -4,6 +4,8 @@
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,LoginAppMVCProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleServletProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleWebProject"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringDemo"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringMVCDemo"/>
 </provider>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501420739527_0" label="workshop1" name="workshop1">
 <item elementID="=SimpleServletProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -11,5 +13,9 @@
 </workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501826394521_4" label="workshop2" name="workshop2">
 <item elementID="=LoginAppMVCProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1503069773231_4" label="workshop4" name="workshop4">
+<item elementID="=SpringMVCDemo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SpringDemo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 </psf>

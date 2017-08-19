@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This spring config is used by BeanFactory demo -->
+
+<!-- This doctype declaration is pretty much old. Check schema name space in beans tag. -->
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="triangle1" class="com.swen90007.example1.Triangle">
+        <!-- <property name="type" value="equilateral setter"></property> --> <!-- Activity 2.1 : Setter Injection in Spring -->
+        <constructor-arg type="java.lang.String" value="equilateral constructor" /> <!-- Activity 2.2: Constructor Injection in Spring -->
+	</bean>
+</beans>

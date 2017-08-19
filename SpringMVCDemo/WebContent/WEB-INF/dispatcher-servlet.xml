@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Note that we do not need any of this xml kind all together, if we choose to use the approach 3 at AppInitializer
+    i.e. A 100% code-based approach to configuration. The 100% code-based approach has been the modern Spring usage.
+    But the choice is yours!
+ -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+	
+	<bean name="/welcome.htm" class="com.swen90007.example1.HelloWorldController">
+		<property name="message" value="Hello World!" />
+	</bean>
+	
+	<!-- This is just additional exercise, such that, think of how to use if there exist a Service layer.  -->
+	<bean id="helloService" scope="singleton" class="com.swen90007.example1.HelloService" />
+	<context:component-scan base-package="com.swen90007.example1" />
+	
+</beans>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This spring config is used by ApplicationContext demo -->
+
+<!-- This doctype declaration is pretty much old. Check schema name space in beans tag. -->
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="triangle2" class="com.swen90007.example1.Triangle">
+		<!-- <property name="type" value="equilateral setter"></property> --> <!-- Activity 2.1 : Setter Injection in Spring -->
+		<constructor-arg type="java.lang.String" value="equilateral constructor" /> <!-- Activity 2.2: Constructor Injection in Spring -->
+		
+		<!-- Activity 3.2: Using the Spring Dependency Injection feature to inject objects -->
+		<property name="p1" ref="zeroPoint" />
+		<!-- 
+        <property name="p2" ref="point2" />
+        <property name="p3" ref="point3" />
+         -->
+        
+        <!-- Activity 3.3: another way, using as inner beans for p2 and p3. Say, the point beans are not required to be reusable. --> 
+        <property name="p2">
+            <bean class="com.swen90007.example1.Point">
+		       <property name="x" value="-20" />
+		       <property name="y" value="0" />                
+            </bean>
+        </property>
+        
+        <property name="p3">
+            <bean class="com.swen90007.example1.Point">
+               <property name="x" value="20" />
+               <property name="y" value="0" />                
+            </bean>
+        </property>
+	</bean>
+	
+	<!-- Activity 3: Using the Spring Dependency Injection feature to inject objects -->
+	
+	<bean id="zeroPoint" class="com.swen90007.example1.Point">
+	   <property name="x" value="0" />
+	   <property name="y" value="0" />
+	</bean>
+	
+    <bean id="point2" class="com.swen90007.example1.Point">
+       <property name="x" value="-20" />
+       <property name="y" value="0" />
+    </bean>
+	
+    <bean id="point3" class="com.swen90007.example1.Point">
+       <property name="x" value="20" />
+       <property name="y" value="0" />
+    </bean>
+	
+</beans>
