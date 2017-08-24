@@ -2,7 +2,11 @@
 
 Software Design and Architecture Tutorials
 
-*Note that you might need to repeat these procedures as I add new projects into this repo in each week.*
+*I still (highly) recommend, you attempt first following the tute note.*
+
+*Response to discussion questions are my own attempts and observation. I can not endorse 100% correctness of these responses in the context of how the subject is framing. Please approach the respective lecturer, tutor or use your own discretion.*
+
+*Repeat the following procedures if new projects added into this repo in each week.*
 
 ### Quick demo
 
