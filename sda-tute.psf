@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernateExamples"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,LoginAppMVCProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleServletProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleWebProject"/>
@@ -17,5 +18,8 @@
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1503069773231_4" label="workshop4" name="workshop4">
 <item elementID="=SpringMVCDemo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=SpringDemo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1503977340400_6" label="workshop5" name="workshop5">
+<item elementID="=HibernateExamples" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 </psf>
