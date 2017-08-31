@@ -1,0 +1,1 @@
+select * from MY_SCHEMA.EMPLOYEE;
