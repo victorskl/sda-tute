@@ -15,6 +15,23 @@ bash startNetworkServer
 
 Follow tute note 4.1 for Connecting from Eclipse and working in Database Development Perspective.
 
+### Cannot open connection
+
+```
+Exception in thread "main" org.hibernate.exception.JDBCConnectionException: Cannot open connection
+    at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:97)
+    ...
+Caused by: ERROR 08001: java.net.ConnectException : Error connecting to server localhost on port 1,527 with message Connection refused (Connection refused).
+    at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+    ...
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+    at java.net.PlainSocketImpl.socketConnect(Native Method)
+    ...
+
+```
+
+Make sure to start the Apache Derby RDBMS SQL server in Network mode.
+
 ### Example output
 
 Run `TestEmployee`.

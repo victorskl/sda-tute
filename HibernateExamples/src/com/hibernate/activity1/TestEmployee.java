@@ -1,5 +1,7 @@
 package com.hibernate.activity1;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -49,7 +51,7 @@ public class TestEmployee {
         Query q = session.createQuery("from Employee");
         for (Object obj : q.list()) {
             Employee e = (Employee) obj;
-            System.out.println(e.getEmpId() + " " + e.getEmpName());
+            logger.info(e.getEmpId() + " " + e.getEmpName());
         }
         session.getTransaction().commit();
         
@@ -67,7 +69,7 @@ public class TestEmployee {
         session = factory.getCurrentSession();
         session.beginTransaction();
         Employee e = (Employee) session.get(Employee.class, 100);
-        System.out.println(e.getEmpId() + " " + e.getEmpName());
+        logger.info(e.getEmpId() + " " + e.getEmpName());
         session.getTransaction().commit();
         
         
@@ -83,7 +85,7 @@ public class TestEmployee {
         session = factory.getCurrentSession();
         session.beginTransaction();        
         Query query = session.createQuery("from Employee");
-        System.out.println("Employee table has total: " + query.list().size() + " rows.");
+        logger.info("Employee table has total: " + query.list().size() + " rows.");
         session.getTransaction().commit();
         
         
@@ -93,4 +95,6 @@ public class TestEmployee {
         // Optional Activity: More on Hibernate Annotations
         //  these should be ok. Just read Hibernate documentation. May be do it in the project.
     }
+    
+    private final static Logger logger = LogManager.getLogger(TestEmployee.class);
 }
