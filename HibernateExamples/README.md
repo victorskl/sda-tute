@@ -13,7 +13,13 @@ cd bin
 bash startNetworkServer
 ```
 
+### Database Development Perspective
+
 Follow tute note 4.1 for Connecting from Eclipse and working in Database Development Perspective.
+
+![open_perspective.PNG](https://www.dropbox.com/s/2rmazu4p5v0ndo5/open_perspective.PNG?raw=1)
+
+![open_perspective_list.PNG](https://www.dropbox.com/s/tvgq4key4cs2l97/open_perspective_list.PNG?raw=1)
 
 ### Cannot open connection
 
@@ -31,6 +37,34 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 ```
 
 Make sure to start the Apache Derby RDBMS SQL server in Network mode.
+
+### database swen90007 was not found
+
+```
+ERROR [main] (JDBCExceptionReporter.java:101) - The connection was refused because the database swen90007 was not found.
+Exception in thread "main" org.hibernate.exception.JDBCConnectionException: Cannot open connection
+```
+
+Make sure you setup the database `swen90007` using Database Development Perspective (refer previous section on how to on this).
+
+Add new Derby connection > New (Derby) Driver Definition
+
+![add_derby_conn.PNG](https://www.dropbox.com/s/yle9anampite0ju/add_derby_conn.PNG?raw=1)
+
+![new_driver_definition1.PNG](https://www.dropbox.com/s/gtxhov8nqjri2mv/new_driver_definition1.PNG?raw=1)
+
+Remove the default one.
+
+![new_driver_definition2.PNG](https://www.dropbox.com/s/0eww6eopsve6zpo/new_driver_definition2.PNG?raw=1)
+
+Add by browsing it to your downloaded Derby unzip location.
+
+![new_driver_definition3.PNG](https://www.dropbox.com/s/e4n24hti3kqafrj/new_driver_definition3.PNG?raw=1)
+
+Test the connection.
+
+![add_derby_conn_ping.PNG](https://www.dropbox.com/s/ahm8wzkkerub1vo/add_derby_conn_ping.PNG?raw=1)
+
 
 ### Example output
 

@@ -2,10 +2,12 @@
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernateExamples"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernatePatternsForDataSourceLayer"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,LoginAppMVCProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleServletProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleWebProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringDemo"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringHibernate"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringMVCDemo"/>
 </provider>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501420739527_0" label="workshop1" name="workshop1">
@@ -21,5 +23,9 @@
 </workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1503977340400_6" label="workshop5" name="workshop5">
 <item elementID="=HibernateExamples" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501826504553_9" label="workshop6" name="workshop6">
+<item elementID="=HibernatePatternsForDataSourceLayer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SpringHibernate" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 </psf>

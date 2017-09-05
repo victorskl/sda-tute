@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="/HibernateExamples/lib/slf4j-log4j12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
