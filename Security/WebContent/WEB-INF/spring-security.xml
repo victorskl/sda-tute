@@ -1,0 +1,29 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
+
+	<!-- Activity 1. User Authentication using Spring default log in form -->
+	<!-- <http auto-config="true"> -->
+	<!-- <intercept-url pattern="welcomePage" access="ROLE_ADMIN" /> -->
+	<!-- <form-login default-target-url="/welcomePage" /> -->
+
+	<!-- Activity 2. User Authentication using a custom log-in form -->
+	<http use-expressions="true">
+		<intercept-url pattern="/login*" access="isAnonymous()" />
+		<intercept-url pattern="/logoutPage" access="isAnonymous()" />
+		<intercept-url pattern="/**" access="isAuthenticated()" />
+		<form-login login-page="/login" default-target-url="/mypage"
+			authentication-failure-url="/login?error=true" />
+		<logout logout-success-url="/logoutPage" logout-url="/j_spring_security_logout" />
+	</http>
+
+	<authentication-manager>
+		<authentication-provider>
+			<user-service>
+				<user name="admin" password="admin" authorities="ROLE_ADMIN" />
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+
+</beans:beans>

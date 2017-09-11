@@ -4,6 +4,8 @@
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernateExamples"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernatePatternsForDataSourceLayer"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,LoginAppMVCProject"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,Security"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SecurityDbAuth"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleServletProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SimpleWebProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SpringDemo"/>
@@ -27,5 +29,9 @@
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501826504553_9" label="workshop6" name="workshop6">
 <item elementID="=HibernatePatternsForDataSourceLayer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=SpringHibernate" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501826511632_10" label="workshop7" name="workshop7">
+<item elementID="=Security" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SecurityDbAuth" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 </psf>
