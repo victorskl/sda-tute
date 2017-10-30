@@ -7,10 +7,8 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class CompoundKey implements Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 1L;
+    
     private int userId;
     private int accountId;
 

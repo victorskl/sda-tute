@@ -27,3 +27,21 @@ Go run the `DrawingApp` and observe it, and then you can answer. These links mig
 - https://www.google.com.au/search?q=ApplicationContext
 - https://www.google.com.au/search?q=BeanFactory
 
+### NOTE
+
+- This is not a Web Application. So Right Click on DrawingApp.java and Run as Java Application.
+- This mainly explore the Spring core pattern and concept about Inversion of Control and Dependency Injection.
+- The following an example output of a run.
+
+```
+Triangle drawn: using new keyword. Type is: null
+Oct 29, 2017 1:00:54 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from file [D:\...\sda-tute\SpringDemo\spring.xml]
+Triangle drawn: using BeanFactory. Type is: equilateral constructor
+Oct 29, 2017 1:00:55 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19bb089b: startup date [Sun Oct 29 13:00:54 AEDT 2017]; root of context hierarchy
+Oct 29, 2017 1:00:55 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring.xml]
+Triangle drawn: using ApplicationContext. Type is: equilateral constructor
+x values are 0:-20:20
+```

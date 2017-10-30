@@ -3,6 +3,8 @@
 <provider id="org.eclipse.egit.core.GitProvider">
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernateExamples"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,HibernatePatternsForDataSourceLayer"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,JMSPointToPoint"/>
+<project reference="1.0,https://github.com/victorskl/sda-tute.git,master,JMSPublishSubscribe"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,LoginAppMVCProject"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,Security"/>
 <project reference="1.0,https://github.com/victorskl/sda-tute.git,master,SecurityDbAuth"/>
@@ -31,7 +33,11 @@
 <item elementID="=SpringHibernate" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1501826511632_10" label="workshop7" name="workshop7">
-<item elementID="=Security" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=SecurityDbAuth" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Security" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1509324426783_8" label="workshop9" name="workshop9">
+<item elementID="=JMSPublishSubscribe" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=JMSPointToPoint" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 </psf>

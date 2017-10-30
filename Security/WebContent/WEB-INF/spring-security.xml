@@ -13,7 +13,7 @@
 		<intercept-url pattern="/login*" access="isAnonymous()" />
 		<intercept-url pattern="/logoutPage" access="isAnonymous()" />
 		<intercept-url pattern="/**" access="isAuthenticated()" />
-		<form-login login-page="/login" default-target-url="/mypage"
+		<form-login login-page="/login" default-target-url="/welcomePage"
 			authentication-failure-url="/login?error=true" />
 		<logout logout-success-url="/logoutPage" logout-url="/j_spring_security_logout" />
 	</http>

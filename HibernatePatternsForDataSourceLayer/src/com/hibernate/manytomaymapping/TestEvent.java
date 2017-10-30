@@ -7,23 +7,20 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 public class TestEvent {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-	// TODO Auto-generated method stub
+	
+	
+	// hibernate bootstrap
 	AnnotationConfiguration config = new AnnotationConfiguration();
 	config.addAnnotatedClass(Event.class);
 	config.addAnnotatedClass(Delegate.class);
-
 	config.configure();
-
 	new SchemaExport(config).create(true, true);
-
 	SessionFactory factory = config.buildSessionFactory();
 	Session session = factory.getCurrentSession();
 	session.beginTransaction();
 
+	// persist domain model
 	Delegate delegate1 = new Delegate();
 	delegate1.setDelegateName("Alex Rod");
 	Delegate delegate2 = new Delegate();

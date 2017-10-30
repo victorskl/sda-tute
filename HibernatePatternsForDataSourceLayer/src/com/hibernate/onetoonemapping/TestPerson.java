@@ -7,23 +7,19 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 public class TestPerson {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-	// TODO Auto-generated method stub
+	
+	// hibernate bootstrap
 	AnnotationConfiguration config = new AnnotationConfiguration();
 	config.addAnnotatedClass(Person.class);
 	config.addAnnotatedClass(PersonDetail.class);
-
 	config.configure();
-
 	new SchemaExport(config).create(true, true);
-
 	SessionFactory factory = config.buildSessionFactory();
 	Session session = factory.getCurrentSession();
 	session.beginTransaction();
 
+	// persist domain model
 	PersonDetail alexDetail = new PersonDetail();
 	alexDetail.setZipcode("20815");
 	alexDetail.setJob("Accountant");

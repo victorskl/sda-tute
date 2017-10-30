@@ -30,10 +30,11 @@ public class XMLServletParameters extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
 
+	// Activity 3.1 doGet()
 	response.setContentType("text/html");
 	System.out.println("Hello from GET method /xmlServletParameterspath");
 	PrintWriter writer = response.getWriter();
-	writer.println("<h3> Hello from GET: [" + request.getParameter("userName") + "] [" + request.getParameter("passWord") + "] </h3>");
+	writer.println("<h3>[Activity 3] Hello from GET: [" + request.getParameter("userName") + "] [" + request.getParameter("passWord") + "] </h3>");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -45,10 +46,11 @@ public class XMLServletParameters extends HttpServlet {
 	String initUserName = getServletConfig().getInitParameter("userName");
 	String initPassWord = getServletConfig().getInitParameter("passWord");
 	
+	// Activity 3.2 doPost()
 	response.setContentType("text/html");
 	System.out.println("Hello from POST method /xmlServletParameterspath");
 	PrintWriter writer = response.getWriter();
-	writer.println("<h3> Hello from POST: Your user name is: [" + userName + "], Your password is: [" + passWord + "]. </h3>");
+	writer.println("<h3>[Activity 3] Hello from POST: Your user name is: [" + userName + "], Your password is: [" + passWord + "]. </h3>");
 	
 	// Activity 4
 	writer.println("<hr /> <h2>Activity 4 Result:</h2>");
@@ -60,7 +62,7 @@ public class XMLServletParameters extends HttpServlet {
 	    writer.println(helloMsg);
 	    
 	    // Activity 5
-	    response.sendRedirect("success.jsp"); // comment this line for Activity 4
+	    //response.sendRedirect("success.jsp"); // uncomment this line for Activity 5
 	} 
 	else {
 	    writer.println(errorMsg);

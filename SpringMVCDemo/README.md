@@ -15,6 +15,7 @@
 ## Activity 4: Develop a simple Spring MVC application
 
 - If you encounter `ClassNotFoundException` like below, make sure you build the project first, before `Run on Server` or add as module to Tomcat.
+
     ```
     org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.swen90007.example1.HelloWorldController] for bean with name '/welcome.htm' defined in ServletContext resource [/WEB-INF/dispatcher-servlet.xml]; nested exception is java.lang.ClassNotFoundException: com.swen90007.example1.HelloWorldController
         org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1385)
@@ -22,6 +23,7 @@
     java.lang.ClassNotFoundException: com.swen90007.example1.HelloWorldController
         org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1285)
     ```
+
 - Alternatively, you can turn on `Project > Build Automatically`. Usually this is the default, in case if you happen to turn off at some point.
 
 ![build-auto.png](https://www.dropbox.com/s/gfqjso367xfcdc4/build-auto.png?raw=1)

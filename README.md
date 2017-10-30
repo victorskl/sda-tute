@@ -6,7 +6,42 @@ Software Design and Architecture Tutorials
 
 *Response to discussion questions are my own attempts and observation. I can not endorse 100% correctness of these responses in the context of how the subject is framing. Please approach the respective lecturer, tutor or use your own discretion.*
 
-*Repeat the following procedures if new projects added into this repo in each week.*
+### By Workshop
+
+Eclipse Projects are logically group by Working Sets (see below). However, for convenience, here are group by view.
+
+Workshop 1
+- [SimpleWebProject](SimpleWebProject)
+- [SimpleServletProject](SimpleServletProject)
+
+Workshop 2
+- [LoginAppMVCProject](LoginAppMVCProject)
+
+Workshop 3
+- none
+
+Workshop 4
+- [SpringDemo](SpringDemo)
+- [SpringMVCDemo](SpringMVCDemo)
+
+Workshop 5
+- [HibernateExamples](HibernateExamples)
+
+Workshop 6
+- [HibernatePatternsForDataSourceLayer](HibernatePatternsForDataSourceLayer)
+- [SpringHibernate](SpringHibernate)
+
+Workshop 7
+- [Security](Security)
+- [SecurityDbAuth](SecurityDbAuth)
+
+Workshop 8
+- none
+
+Workshop 9
+- [JMSPointToPoint](JMSPointToPoint)
+- [JMSPublishSubscribe](JMSPublishSubscribe)
+
 
 ### Quick demo
 

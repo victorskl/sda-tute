@@ -1,5 +1,5 @@
 # Workshop 7 - Week 8 
-Spring Security
+Spring Security to protect Spring MVC - basic
 
 ## More tutorials
 

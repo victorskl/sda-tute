@@ -35,7 +35,7 @@ public class LoginController2 extends HttpServlet {
 	    dispatcher.forward(request, response);
 	    
 	} else {
-	    response.sendRedirect("login.jsp");
+	    response.sendRedirect("login2.jsp");
 	}
     }
 }

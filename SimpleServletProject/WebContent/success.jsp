@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<h2>Activity 5 Result:</h2>
+
 <h3>Hi Admin, Logging in was successful.</h3>
 The time is now <%= new java.util.Date() %>
+
 <a href="SimpleLogInForm.html">Login Page</a>
 
 </body>

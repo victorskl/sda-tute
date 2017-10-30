@@ -22,5 +22,13 @@
 		
 	</form>
 
+
+	<hr />
+	
+	<ul>
+		<li>Username: admin</li>
+		<li>Password: admin</li>	
+	</ul>
+	
 </body>
 </html>
